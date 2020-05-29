@@ -20,7 +20,7 @@ changelog:
     - '^docs:'
     - '^test:'
 brews:
-  - name: acert
+  - name: incert
     github:
       owner: greymatter-io
       name: homebrew-greymatter
@@ -28,4 +28,4 @@ brews:
     homepage: https://github.com/greymatter-io/incert
     folder: Formula
     test: |
-      system "#{bin}/acert version"
+      system "#{bin}/incert version"
