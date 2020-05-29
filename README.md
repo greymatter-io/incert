@@ -3,6 +3,7 @@
 [![CircleCI](https://circleci.com/gh/greymatter-io/incert.svg?style=svg)](https://circleci.com/gh/greymatter-io/incert)
 [![Maintainability](https://api.codeclimate.com/v1/badges/8e343d15763118d6c09d/maintainability)](https://codeclimate.com/github/greymatter-io/incert/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/8e343d15763118d6c09d/test_coverage)](https://codeclimate.com/github/greymatter-io/incert/test_coverage)
+[![Release](https://github.com/greymatter-io/incert/workflows/Create%20a%20release/badge.svg)](https://github.com/greymatter-io/incert/actions)
 
 A command line utility for generating single use certificate authorities and issuing certificates.
 
