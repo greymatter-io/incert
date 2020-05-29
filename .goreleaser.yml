@@ -1,0 +1,31 @@
+before:
+  hooks:
+    - go mod download
+    - go generate ./...
+builds:
+- env:
+  - CGO_ENABLED=0
+archives:
+- replacements:
+    386: i386
+    amd64: x86_64
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .Tag }}-next"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+    - '^docs:'
+    - '^test:'
+brews:
+  - name: acert
+    github:
+      owner: greymatter-io
+      name: homebrew-greymatter
+    description: Ephemeral certificate authority
+    homepage: https://github.com/greymatter-io/incert
+    folder: Formula
+    test: |
+      system "#{bin}/acert version"
