@@ -29,4 +29,4 @@ vendor:
 .PHONY: docker
 docker: build.linux
 	@echo "--> Building image..."
-	@docker build -t greymatterio/incert:latest .
+	@docker build -t tools/incert:latest .
